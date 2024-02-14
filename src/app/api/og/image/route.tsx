@@ -130,8 +130,6 @@ export async function GET(request: Request) {
     );
   }
 
-  console.log(content);
-
   const templateData = getDataForTemplate(template);
 
   const frameStyle: Style = {
