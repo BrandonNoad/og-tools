@@ -247,6 +247,9 @@ export async function GET(request: Request) {
       width: 800,
       height: aspectRatio === "1:1" ? 800 : 418,
       fonts,
+      headers: {
+        "Cache-Control": "public, max-age=14400, immutable, no-transform",
+      },
     }
   );
 }
